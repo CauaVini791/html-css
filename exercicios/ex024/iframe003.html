@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 98vw;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus reprehenderit natus saepe, voluptatibus quia accusantium enim sequi, veritatis beatae dolorem quas a dolore incidunt labore ipsum voluptatem fuga ullam! Omnis!</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatum veniam non distinctio eveniet maiores quia odio voluptatibus dolorum odit! Quia vel laborum est, cumque temporibus quis rem alias sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quia aperiam excepturi similique tempora itaque labore necessitatibus rem placeat qui nostrum exercitationem commodi, quo hic doloremque modi sed quos illum?</p>
+
+    <!-- srcdoc="" é uma forma de colocar HTML no iframe -->
+
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções acima.</h1>">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ullam ut praesentium fuga temporibus atque deserunt error dignissimos, at quas quia eius, assumenda aspernatur quisquam nulla qui! Asperiores, eaque magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aspernatur labore, odit atque quod, nobis recusandae explicabo possimus ipsa, beatae est esse ea sunt adipisci nihil quos eius magni temporibus?</p>
+</body>
+</html>
